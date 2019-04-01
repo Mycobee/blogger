@@ -1,6 +1,7 @@
 
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
+<p>Comments (<%= @article.comments.size %>)</p>
 <%= render partial: 'articles/comment', collection: @article.comments.reverse %>
 <%= render partial: 'comments/form' %>
 

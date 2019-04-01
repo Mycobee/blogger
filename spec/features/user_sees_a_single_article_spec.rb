@@ -16,6 +16,7 @@ describe "user sees one article" do
             expect(page).to have_content(comment_2.body)
             expect(page).to have_content(article_1.title)
             expect(page).to have_content(article_1.body)            
+            expect(page).to have_content("Comments (2)")            
         end
     end
 
